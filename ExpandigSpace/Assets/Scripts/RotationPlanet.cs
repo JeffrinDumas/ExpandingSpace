@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bol : MonoBehaviour {
+public class RotationPlanet : MonoBehaviour {
+
+
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("hello");
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+        Vector3 relativePos = transform.position;
 	}
 }
