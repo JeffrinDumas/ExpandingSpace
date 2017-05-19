@@ -9,7 +9,7 @@ public class Slidertimer : MonoBehaviour {
     private float runningtime;
 	// Use this for initialization
 	void Start () {
-        mainslider.value = 240;
+        mainslider.value = mainslider.maxValue;
         timer = 60;
         runningtime = 0;
 	}
