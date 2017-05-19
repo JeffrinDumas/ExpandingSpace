@@ -46,14 +46,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\Bol.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Slidertimer.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Load_Scene.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Quit_Game.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Select_OnInput.cs" />
-=======
      <Compile Include="Assets\Scripts\RotationPlanet.cs" />
->>>>>>> 573db43b61ff894ec8620913aaeb8edbd6968e6a
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
