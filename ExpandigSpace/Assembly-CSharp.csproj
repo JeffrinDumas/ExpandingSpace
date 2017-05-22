@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Scripts\Main_Menu\Load_Scene.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Quit_Game.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Select_OnInput.cs" />
@@ -53,6 +54,15 @@
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityAttractor.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityBody.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\PlayerController.cs" />
+=======
+     <Compile Include="Assets\Scripts\InGameUI\Slidertimer.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\Load_Scene.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\Quit_Game.cs" />
+     <Compile Include="Assets\Scripts\Main_Menu\Select_OnInput.cs" />
+     <Compile Include="Assets\Scripts\Player_Collision\CollisionPopup.cs" />
+     <Compile Include="Assets\Scripts\Player_Collision\Moveplayer.cs" />
+     <Compile Include="Assets\Scripts\RotationPlanet.cs" />
+>>>>>>> 7c932e812f3b39c8e328892e6cd567d6699d9596
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
