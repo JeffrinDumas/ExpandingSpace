@@ -7,20 +7,10 @@ public class CollisionPopup : MonoBehaviour {
 
     public GameObject popup;
     public Text question;
-    public GameObject option1;
-    public GameObject option2;
-    public GameObject option3;
-    public GameObject option4;
-    public GameObject option5;
-    public GameObject option6;
-    public Text option1text;
-    public Text option2text;
-    public Text option3text;
-    public Text option4text;
-    public Text option5text;
-    public Text option6text;
-    public string[] vragen;
-    public string[] antwoorden;
+    public GameObject[] options;
+    public Text[] optionstexts;
+    private string[] vragen;
+    private string[] antwoorden;
     private int randomvragen;
 
     void Start()
@@ -39,38 +29,32 @@ public class CollisionPopup : MonoBehaviour {
         };
     }
 
-    /*void Update()
-    {
-        var randomvragen = Random.Range(0, 2);
-        Debug.Log(randomvragen);
-    }*/
-
     void OnTriggerEnter(Collider other)
     {
-        Time.timeScale = 0;
         randomvragen = Random.Range(0, 2);
-        //Debug.Log(randomvragen);
-        if(other.tag == "Snail")
+        if (other.tag == "Snail")
         {
             popup.SetActive(true);
+            Time.timeScale = 0;
         }
+
         switch (randomvragen)
         {
             case 0:
                 question.text = vragen[0];
-                option2.SetActive(true);
-                option2text.text = antwoorden[0];
-                option5.SetActive(true);
-                option5text.text = antwoorden[1];
+                options[1].SetActive(true);
+                optionstexts[1].text = antwoorden[0];
+                options[4].SetActive(true);
+                optionstexts[4].text = antwoorden[1];
                 break;
             case 1:
                 question.text = vragen[1];
-                option1.SetActive(true);
-                option1text.text = antwoorden[2];
-                option2.SetActive(true);
-                option2text.text = antwoorden[3];
-                option3.SetActive(true);
-                option3text.text = antwoorden[4];
+                options[0].SetActive(true);
+                optionstexts[0].text = antwoorden[2];
+                options[1].SetActive(true);
+                optionstexts[1].text = antwoorden[3];
+                options[2].SetActive(true);
+                optionstexts[2].text = antwoorden[4];
                 break;
         }
     }
@@ -78,5 +62,9 @@ public class CollisionPopup : MonoBehaviour {
     void OnTriggerExit(Collider other)
     {
         Time.timeScale = 1;
+        for(int i = 0; i < options.Length; i++)
+        {
+            options[i].SetActive(false);
+        }
     }
 }
