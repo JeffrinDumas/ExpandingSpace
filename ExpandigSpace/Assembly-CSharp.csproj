@@ -46,6 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\InGameUI\Button1.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Button2.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Button3.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Button4.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Button5.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\Button6.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\QuestionControl.cs" />
      <Compile Include="Assets\Scripts\InGameUI\Slidertimer.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Load_Scene.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Quit_Game.cs" />
