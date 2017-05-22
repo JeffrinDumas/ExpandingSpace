@@ -18,8 +18,7 @@ public class Moveplayer : MonoBehaviour {
         //retrieve input
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-        float y = Input.GetAxis("Jump");
-        _inputDirection = new Vector3(x, y, z);
+        _inputDirection = new Vector3(x, 0, z);
     }
 
     void FixedUpdate()
