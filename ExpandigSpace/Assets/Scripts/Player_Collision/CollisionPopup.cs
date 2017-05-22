@@ -9,6 +9,8 @@ public class CollisionPopup : MonoBehaviour {
     public Text question;
     public GameObject[] options;
     public Text[] optionstexts;
+    public QuestionGiver questionGiver;
+
     private string[] vragen;
     private string[] antwoorden;
     private int randomvragen;
@@ -30,13 +32,9 @@ public class CollisionPopup : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other)
-    {
+    {/*
         randomvragen = Random.Range(0, 2);
-        if (other.tag == "Snail")
-        {
-            popup.SetActive(true);
-            Time.timeScale = 0;
-        }
+       
 
         switch (randomvragen)
         {
@@ -57,6 +55,14 @@ public class CollisionPopup : MonoBehaviour {
                 optionstexts[2].text = antwoorden[4];
                 break;
         }
+        */
+        if (other.tag == "Snail")
+        {
+            popup.SetActive(true);
+            Time.timeScale = 0;
+        }
+        Question q = questionGiver.GiveQuestion();
+        question.text = q.questionText;
     }
 
     void OnTriggerExit(Collider other)
