@@ -7,7 +7,7 @@ public class QuestionControl : MonoBehaviour {
 
 	
 	void Start () {
-        GetComponent<Button>() = vragen[];
+     //
 	}
 	
 
