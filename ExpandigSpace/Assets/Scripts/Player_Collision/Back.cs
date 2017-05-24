@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Back : MonoBehaviour {
     public GameObject popup;
-    public GameObject picture1;
+    public GameObject rightanwser;
 
     public void Close()
     {
         Time.timeScale = 1;
         popup.SetActive(false);
-        //picture1.
+        rightanwser.SetActive(false);
     }
 }

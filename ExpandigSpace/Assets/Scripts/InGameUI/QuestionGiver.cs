@@ -14,7 +14,6 @@ public class QuestionGiver : MonoBehaviour
         int randomIndex = Random.Range(0, questions.Length);
         return questions[randomIndex];
     }
-	
 }
 
 [System.Serializable]
