@@ -9,15 +9,19 @@ public class CollisionPopup : MonoBehaviour {
     public Text question;
     public GameObject[] options;
     public Text[] optionstexts;
+    public GameObject currentobject;
+    public GameObject rightpanel;
+    public GameObject wrongpanel;
+    public GameObject questionpanel;
     public QuestionGiver questionGiver;
-
-    private string[] vragen;
-    private string[] antwoorden;
+    public Question q;
+    //private string[] vragen;
+    //private string[] antwoorden;
     private int randomvragen;
 
     void Start()
     {
-        vragen = new string[] {
+        /*vragen = new string[] {
             "Is de aarde een planeet?",
             "Wat is geen sterrenbeeld?"
         };
@@ -28,7 +32,7 @@ public class CollisionPopup : MonoBehaviour {
             "boogschutter",
             "sprinkhaan",
             "slang"
-        };
+        };*/
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,8 +65,15 @@ public class CollisionPopup : MonoBehaviour {
             popup.SetActive(true);
             Time.timeScale = 0;
         }
-        Question q = questionGiver.GiveQuestion();
+        q = questionGiver.GiveQuestion();
         question.text = q.questionText;
+        //Debug.Log(q.answers.Length);
+        //Debug.Log(q.answers[0].correct);
+        for(int i = 0; i< q.answers.Length; i++)
+        {
+            options[i].SetActive(true);
+            optionstexts[i].text = q.answers[i].answerText;
+        }
     }
 
     void OnTriggerExit(Collider other)

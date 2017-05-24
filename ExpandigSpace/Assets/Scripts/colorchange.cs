@@ -7,7 +7,7 @@ public class colorchange : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Image>().color = Color.white;
+		//GetComponent<Image>().color = Color.white;
 	}
 	
 	// Update is called once per frame
