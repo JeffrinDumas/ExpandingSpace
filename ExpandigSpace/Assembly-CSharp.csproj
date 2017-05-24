@@ -46,18 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\InGameUI\Button1.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\Button2.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\Button3.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\Button4.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\Button5.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\Button6.cs" />
-     <Compile Include="Assets\Scripts\InGameUI\QuestionControl.cs" />
-=======
      <Compile Include="Assets\Scripts\InGameUI\OnClick.cs" />
      <Compile Include="Assets\Scripts\InGameUI\QuestionGiver.cs" />
->>>>>>> be5760becdcb36d6d05baa0c7973fc313e251f4e
      <Compile Include="Assets\Scripts\InGameUI\Slidertimer.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Load_Scene.cs" />
      <Compile Include="Assets\Scripts\Main_Menu\Quit_Game.cs" />
@@ -65,8 +55,6 @@
      <Compile Include="Assets\Scripts\Player_Collision\Back.cs" />
      <Compile Include="Assets\Scripts\Player_Collision\CollisionPopup.cs" />
      <Compile Include="Assets\Scripts\Player_Collision\Moveplayer.cs" />
-     <Compile Include="Assets\Scripts\QuestionChecker.cs" />
-     <Compile Include="Assets\Scripts\QuestionGiver.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\PlanetaryRotation\RotationPlanet.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityAttractor.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityBody.cs" />
