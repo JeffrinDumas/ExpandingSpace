@@ -86,3 +86,25 @@ public class CollisionPopup : MonoBehaviour {
         Destroy(other);
     }
 }
+
+
+
+
+
+/*
+ * komen bij slak
+ * krijgen de vraag
+ * beantwoord de vraag 
+ * ! krijg het object
+ * 
+ * als je bij een andere slak komt
+ * ! controleer als je al 1 object bij je hebt
+ * ja geen popup
+ * nee popup
+ * 
+ * komen bij ruimteschip
+ * currentobject gaat weer leeg
+ * voortgang word geupdated
+ * currentobjectnum gaat omhoog
+ * 
+ */
