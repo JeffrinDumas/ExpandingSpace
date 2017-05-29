@@ -83,5 +83,6 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
+        Destroy(other);
     }
 }
