@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Scene_Jeff New.unity
-=======
 - path: Assets/Scenes/Main.unity
->>>>>>> f46e63a3c69171b210cc373224d7c10b6851debd
   isLoaded: 1
   isActive: 1

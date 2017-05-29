@@ -67,6 +67,16 @@ ModelImporter:
     4300014: oog_1
     4300016: oog_2
     4300018: mond
+    6400000: Cylinder
+    6400002: Cylinder_1
+    6400004: Cylinder_1_2
+    6400006: Cylinder_2
+    6400008: doos
+    6400010: mond
+    6400012: neusstukje
+    6400014: oog_1
+    6400016: oog_2
+    6400018: slak_1
     7400000: Main
     9500000: //RootNode
   materials:
@@ -91,13 +101,73 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Main
+      takeName: Main
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bril_en_ogen
+        weight: 1
+      - path: bril_en_ogen/bril
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes/Cylinder
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes/Cylinder_1
+        weight: 1
+      - path: bril_en_ogen/bril/Cylinder_1_2
+        weight: 1
+      - path: bril_en_ogen/bril/Cylinder_2
+        weight: 1
+      - path: bril_en_ogen/bril/neusstukje
+        weight: 1
+      - path: bril_en_ogen/oog_1
+        weight: 1
+      - path: bril_en_ogen/oog_2
+        weight: 1
+      - path: doos
+        weight: 1
+      - path: mond
+        weight: 1
+      - path: slak_2
+        weight: 1
+      - path: slak_2/puntjes
+        weight: 1
+      - path: slak_2/slak_1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
