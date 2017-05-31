@@ -10,7 +10,6 @@ public class OnClick : MonoBehaviour
     public Text whatnow;
     public Text wrong;
     public Text what;
-    //public Button[] buttons;
     public QuestionGiver questionGiver;
     public Slidertimer time;
     // Use this for initialization
@@ -20,17 +19,6 @@ public class OnClick : MonoBehaviour
         whatnow.text = "Je hebt een nieuw onderdeel breng het snel naar het ruimteschip";
         wrong.text = "Helaas je hebt het fout";
         what.text = "Je hebt wel het onderdeel gekregen maar wel een minuut aftrek";
-        /*for (int i = 0; i < buttons.Length; i++)
-        {
-            int capturedIterator = i;
-            buttons[i].onClick.AddListener(() => DoSomething(capturedIterator));
-        }
-    }
-
-    public void DoSomething(int index)
-    {
-        Debug.Log(buttons[index]);
-    }*/
     }
 
     // Update is called once per frame
@@ -54,6 +42,5 @@ public class OnClick : MonoBehaviour
             time.mainslider.value -= 60;
         }
         popup.Inventoryfull = true;
-        Debug.Log(popup.Inventoryfull);
     }
 }

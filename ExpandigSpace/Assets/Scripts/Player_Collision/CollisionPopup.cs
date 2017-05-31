@@ -34,10 +34,8 @@ public class CollisionPopup : MonoBehaviour {
 
         if (other.tag == "Finish")
         {
-            Debug.Log(Inventoryfull);
             if (Inventoryfull == true)
             {
-                Debug.Log(Inventoryfull);
                 switch (ObjectNum)
                 {
 
@@ -77,6 +75,13 @@ public class CollisionPopup : MonoBehaviour {
             options[i].SetActive(true);
             optionstexts[i].text = q.answers[i].answerText;
         }
+        if (other.tag == "Snail")
+        {
+            if (Inventoryfull == false)
+            {
+                Destroy(other);
+            }
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -86,15 +91,5 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-        if(other.tag == "Snail")
-        {
-            if(Inventoryfull == false)
-            {
-                Destroy(other);
-            }
-            
-        }
-        Debug.Log(Inventoryfull);
-        Debug.Log(ObjectNum);
     }
 }
