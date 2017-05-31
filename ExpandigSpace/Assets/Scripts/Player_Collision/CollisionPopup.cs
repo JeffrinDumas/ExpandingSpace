@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollisionPopup : MonoBehaviour {
 
@@ -9,66 +10,68 @@ public class CollisionPopup : MonoBehaviour {
     public Text question;
     public GameObject[] options;
     public Text[] optionstexts;
-    public GameObject currentobject;
+    public GameObject[] currentobject;
+    public GameObject[] objTaken;
     public GameObject rightpanel;
     public GameObject wrongpanel;
     public GameObject questionpanel;
     public QuestionGiver questionGiver;
     public Question q;
-    //private string[] vragen;
-    //private string[] antwoorden;
+    public int ObjectNum = 0;
+    public bool Inventoryfull = false;
     private int randomvragen;
 
-    void Start()
+    void Update()
     {
-        /*vragen = new string[] {
-            "Is de aarde een planeet?",
-            "Wat is geen sterrenbeeld?"
-        };
-        antwoorden = new string[]
+        if (objTaken[2].GetComponent<Image>().color == Color.white)
         {
-            "Ja",
-            "Nee",
-            "boogschutter",
-            "sprinkhaan",
-            "slang"
-        };*/
+            SceneManager.LoadScene(2);
+        }
     }
 
     void OnTriggerEnter(Collider other)
-    {/*
-        randomvragen = Random.Range(0, 2);
-       
+    {
 
-        switch (randomvragen)
+        if (other.tag == "Finish")
         {
-            case 0:
-                question.text = vragen[0];
-                options[1].SetActive(true);
-                optionstexts[1].text = antwoorden[0];
-                options[4].SetActive(true);
-                optionstexts[4].text = antwoorden[1];
-                break;
-            case 1:
-                question.text = vragen[1];
-                options[0].SetActive(true);
-                optionstexts[0].text = antwoorden[2];
-                options[1].SetActive(true);
-                optionstexts[1].text = antwoorden[3];
-                options[2].SetActive(true);
-                optionstexts[2].text = antwoorden[4];
-                break;
+            Debug.Log(Inventoryfull);
+            if (Inventoryfull == true)
+            {
+                Debug.Log(Inventoryfull);
+                switch (ObjectNum)
+                {
+
+
+                    case 0:
+                        currentobject[0].SetActive(false);
+                        objTaken[0].GetComponent<Image>().color = Color.white;
+                        break;
+                    case 1:
+                        currentobject[1].SetActive(false);
+                        objTaken[1].GetComponent<Image>().color = Color.white;
+                        break;
+                    case 2:
+                        currentobject[2].SetActive(false);
+                        objTaken[2].GetComponent<Image>().color = Color.white;
+                        break;
+                }
+                ObjectNum++;
+                Inventoryfull = false;
+            }
+            else
+            {
+
+            }
         }
-        */
-        if (other.tag == "Snail")
+
+        if (other.tag == "Snail" && Inventoryfull == false) 
         {
             popup.SetActive(true);
             Time.timeScale = 0;
         }
         q = questionGiver.GiveQuestion();
         question.text = q.questionText;
-        //Debug.Log(q.answers.Length);
-        //Debug.Log(q.answers[0].correct);
+       
         for(int i = 0; i< q.answers.Length; i++)
         {
             options[i].SetActive(true);
@@ -83,28 +86,15 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-        Destroy(other);
+        if(other.tag == "Snail")
+        {
+            if(Inventoryfull == false)
+            {
+                Destroy(other);
+            }
+            
+        }
+        Debug.Log(Inventoryfull);
+        Debug.Log(ObjectNum);
     }
 }
-
-
-
-
-
-/*
- * komen bij slak
- * krijgen de vraag
- * beantwoord de vraag 
- * ! krijg het object
- * 
- * als je bij een andere slak komt
- * ! controleer als je al 1 object bij je hebt
- * ja geen popup
- * nee popup
- * 
- * komen bij ruimteschip
- * currentobject gaat weer leeg
- * voortgang word geupdated
- * currentobjectnum gaat omhoog
- * 
- */

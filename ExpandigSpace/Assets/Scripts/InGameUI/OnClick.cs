@@ -42,16 +42,18 @@ public class OnClick : MonoBehaviour
     {
         if (popup.q.answers[index].correct == true)
         {
-            popup.currentobject.SetActive(true);
+            popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.rightpanel.SetActive(true);
             popup.questionpanel.SetActive(false);
         }
         else if (popup.q.answers[index].correct == false)
         {
             popup.wrongpanel.SetActive(true);
-            popup.currentobject.SetActive(true);
+            popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.questionpanel.SetActive(false);
             time.mainslider.value -= 60;
         }
+        popup.Inventoryfull = true;
+        Debug.Log(popup.Inventoryfull);
     }
 }

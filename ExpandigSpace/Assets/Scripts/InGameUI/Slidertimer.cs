@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Slidertimer : MonoBehaviour {
     public Slider mainslider;
@@ -23,6 +24,11 @@ public class Slidertimer : MonoBehaviour {
         } else
         {
             runningtime += Time.deltaTime*60;
+        }
+
+        if(mainslider.value == 0)
+        {
+            SceneManager.LoadScene(3);
         }
 	}
 }
