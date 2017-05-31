@@ -81,10 +81,7 @@ public class CollisionPopup : MonoBehaviour {
             {
                 Destroy(other);
             }
-<<<<<<< HEAD
-=======
 
->>>>>>> 460e9610b073286d5983c4ce4d2de34dbf569a9b
         }
     }
 
@@ -95,11 +92,6 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-<<<<<<< HEAD
-=======
-      
-        Debug.Log(Inventoryfull);
-        Debug.Log(ObjectNum);
->>>>>>> 460e9610b073286d5983c4ce4d2de34dbf569a9b
+
     }
 }
