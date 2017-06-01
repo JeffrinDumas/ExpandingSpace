@@ -7,6 +7,7 @@ public class Back : MonoBehaviour {
     public GameObject rightanwser;
     public GameObject wronganwser;
     public GameObject question;
+    public CollisionPopup speler;
 
     public void Close()
     {
@@ -15,5 +16,6 @@ public class Back : MonoBehaviour {
         rightanwser.SetActive(false);
         wronganwser.SetActive(false);
         question.SetActive(true);
+        //speler.target.transform.position = speler.currentPos;
     }
 }

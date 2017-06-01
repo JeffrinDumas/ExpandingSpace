@@ -20,6 +20,8 @@ public class CollisionPopup : MonoBehaviour {
     public int ObjectNum = 0;
     public bool Inventoryfull = false;
     private int randomvragen;
+    public Vector3 currentPos;
+    public GameObject target;
 
     void Update()
     {
@@ -56,16 +58,13 @@ public class CollisionPopup : MonoBehaviour {
                 ObjectNum++;
                 Inventoryfull = false;
             }
-            else
-            {
-
-            }
         }
 
         if (other.tag == "Snail" && Inventoryfull == false) 
         {
             popup.SetActive(true);
             Time.timeScale = 0;
+            
         }
         q = questionGiver.GiveQuestion();
         question.text = q.questionText;
@@ -79,15 +78,10 @@ public class CollisionPopup : MonoBehaviour {
         {
             if (Inventoryfull == false)
             {
-                Destroy(other);
+                other.enabled = false;
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> a5c83c7aa074fb624640408c27fe97845f5ddd55
         }
     }
-
     void OnTriggerExit(Collider other)
     {
         Time.timeScale = 1;
@@ -95,9 +89,5 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> a5c83c7aa074fb624640408c27fe97845f5ddd55
     }
 }

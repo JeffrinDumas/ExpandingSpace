@@ -21,11 +21,6 @@ public class OnClick : MonoBehaviour
         what.text = "Je hebt wel het onderdeel gekregen maar wel een minuut aftrek";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void Click(int index)
     {
         if (popup.q.answers[index].correct == true)
