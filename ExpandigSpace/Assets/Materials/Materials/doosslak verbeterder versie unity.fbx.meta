@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: a61941b8adf44c4448bb44bee5d6ee61
+timeCreated: 1496823000
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bril
+    100002: bril_en_ogen
+    100004: bril_pootjes
+    100006: Cylinder
+    100008: Cylinder_1
+    100010: Cylinder_1_2
+    100012: Cylinder_2
+    100014: doos
+    100016: //RootNode
+    100018: mond
+    100020: neusstukje
+    100022: oog_1
+    100024: oog_2
+    100026: slak_1
+    100028: slak_1_2
+    100030: slak_2
+    400000: bril
+    400002: bril_en_ogen
+    400004: bril_pootjes
+    400006: Cylinder
+    400008: Cylinder_1
+    400010: Cylinder_1_2
+    400012: Cylinder_2
+    400014: doos
+    400016: //RootNode
+    400018: mond
+    400020: neusstukje
+    400022: oog_1
+    400024: oog_2
+    400026: slak_1
+    400028: slak_1_2
+    400030: slak_2
+    2300000: Cylinder
+    2300002: Cylinder_1
+    2300004: Cylinder_1_2
+    2300006: Cylinder_2
+    2300008: doos
+    2300010: mond
+    2300012: neusstukje
+    2300014: oog_1
+    2300016: oog_2
+    2300018: slak_1_2
+    3300000: Cylinder
+    3300002: Cylinder_1
+    3300004: Cylinder_1_2
+    3300006: Cylinder_2
+    3300008: doos
+    3300010: mond
+    3300012: neusstukje
+    3300014: oog_1
+    3300016: oog_2
+    3300018: slak_1_2
+    4300000: slak_1_2
+    4300002: doos
+    4300004: neusstukje
+    4300006: Cylinder_1
+    4300008: Cylinder
+    4300010: Cylinder_1_2
+    4300012: Cylinder_2
+    4300014: oog_1
+    4300016: oog_2
+    4300018: mond
+    6400000: Cylinder
+    6400002: Cylinder_1
+    6400004: Cylinder_1_2
+    6400006: Cylinder_2
+    6400008: doos
+    6400010: mond
+    6400012: neusstukje
+    6400014: oog_1
+    6400016: oog_2
+    6400018: slak_1_2
+    7400000: Main
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Main
+      takeName: Main
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bril_en_ogen
+        weight: 1
+      - path: bril_en_ogen/bril
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes/Cylinder
+        weight: 1
+      - path: bril_en_ogen/bril/bril_pootjes/Cylinder_1
+        weight: 1
+      - path: bril_en_ogen/bril/Cylinder_1_2
+        weight: 1
+      - path: bril_en_ogen/bril/Cylinder_2
+        weight: 1
+      - path: bril_en_ogen/bril/neusstukje
+        weight: 1
+      - path: bril_en_ogen/oog_1
+        weight: 1
+      - path: bril_en_ogen/oog_2
+        weight: 1
+      - path: doos
+        weight: 1
+      - path: mond
+        weight: 1
+      - path: slak_2
+        weight: 1
+      - path: slak_2/slak_1
+        weight: 1
+      - path: slak_2/slak_1/slak_1_2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -21,11 +21,6 @@ public class OnClick : MonoBehaviour
         what.text = "Je hebt wel het onderdeel gekregen maar wel een minuut aftrek";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void Click(int index)
     {
         if (popup.q.answers[index].correct == true)
@@ -33,6 +28,7 @@ public class OnClick : MonoBehaviour
             popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.rightpanel.SetActive(true);
             popup.questionpanel.SetActive(false);
+            popup.score += 10;
         }
         else if (popup.q.answers[index].correct == false)
         {
@@ -40,6 +36,7 @@ public class OnClick : MonoBehaviour
             popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.questionpanel.SetActive(false);
             time.mainslider.value -= 60;
+            popup.score -= 10;
         }
         popup.Inventoryfull = true;
     }
