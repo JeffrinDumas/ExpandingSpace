@@ -144,10 +144,6 @@ public class CollisionPopup : MonoBehaviour {
             {
                 Destroy(redHouseParts[i].gameObject);
             }
-<<<<<<< HEAD
-
-=======
->>>>>>> 8d1f1fe1ad00172198da55f14886d83f7a9aea24
         }
     }
     void OnTriggerExit(Collider other)
@@ -157,9 +153,5 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> 8d1f1fe1ad00172198da55f14886d83f7a9aea24
     }
 }
