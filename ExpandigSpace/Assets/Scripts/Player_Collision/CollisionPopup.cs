@@ -30,6 +30,7 @@ public class CollisionPopup : MonoBehaviour {
     public GameObject[] blueHouseParts;
     public GameObject[] greenHouseParts;
     public GameObject[] redHouseParts;
+    public Animator anim;
 
     void Update()
     {
@@ -38,6 +39,12 @@ public class CollisionPopup : MonoBehaviour {
             SceneManager.LoadScene(3);
         }
         Scoretext.text = "Score: " + score;
+    }
+
+    void OnCollisionEnter()
+    {
+        anim.SetBool("Switch", true);
+        Debug.Log("zie je mij?");
     }
 
     void OnTriggerEnter(Collider other)
@@ -120,6 +127,7 @@ public class CollisionPopup : MonoBehaviour {
                 Destroy(blueHouseParts[i].gameObject);
             }
             //other.GetComponent<Animation>().Play();
+            //anim.SetBool("Switch", true);
         }
         if (other.tag == "DoorGreen" && greenkey == true)
         {
