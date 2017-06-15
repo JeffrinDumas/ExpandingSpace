@@ -46,6 +46,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Highscores\CheckingScores.cs" />
+     <Compile Include="Assets\Scripts\Highscores\ConvertValues.cs" />
+     <Compile Include="Assets\Scripts\Highscores\DestroyNotNeeding.cs" />
+     <Compile Include="Assets\Scripts\Highscores\Highscoreslist.cs" />
+     <Compile Include="Assets\Scripts\Highscores\SaveMyScore.cs" />
+     <Compile Include="Assets\Scripts\InGameUI\ChangePanel.cs" />
      <Compile Include="Assets\Scripts\InGameUI\OnClick.cs" />
      <Compile Include="Assets\Scripts\InGameUI\QuestionGiver.cs" />
      <Compile Include="Assets\Scripts\InGameUI\Slidertimer.cs" />
@@ -60,6 +66,9 @@
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityBody.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\PlayerController.cs" />
      <Compile Include="Assets\Scripts\colorchange.cs" />
+     <Compile Include="Assets\Scripts\playAnimation.cs" />
+     <Compile Include="Assets\Video\MoviePlayerWinLose.cs" />
+     <Compile Include="Assets\test.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

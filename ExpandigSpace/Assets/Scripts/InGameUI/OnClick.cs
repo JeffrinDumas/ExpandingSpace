@@ -28,6 +28,7 @@ public class OnClick : MonoBehaviour
             popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.rightpanel.SetActive(true);
             popup.questionpanel.SetActive(false);
+            popup.score += 10;
         }
         else if (popup.q.answers[index].correct == false)
         {
@@ -35,6 +36,7 @@ public class OnClick : MonoBehaviour
             popup.currentobject[popup.ObjectNum].SetActive(true);
             popup.questionpanel.SetActive(false);
             time.mainslider.value -= 60;
+            popup.score -= 10;
         }
         popup.Inventoryfull = true;
     }

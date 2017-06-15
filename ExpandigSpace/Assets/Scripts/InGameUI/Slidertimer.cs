@@ -28,7 +28,7 @@ public class Slidertimer : MonoBehaviour {
 
         if(mainslider.value == 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 	}
 }
