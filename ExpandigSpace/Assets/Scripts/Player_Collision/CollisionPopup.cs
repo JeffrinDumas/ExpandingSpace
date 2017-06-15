@@ -81,10 +81,7 @@ public class CollisionPopup : MonoBehaviour {
             {
                 Destroy(other);
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> a5c83c7aa074fb624640408c27fe97845f5ddd55
         }
     }
 
@@ -95,9 +92,6 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> a5c83c7aa074fb624640408c27fe97845f5ddd55
     }
 }
