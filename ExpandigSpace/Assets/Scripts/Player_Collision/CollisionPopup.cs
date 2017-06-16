@@ -41,11 +41,11 @@ public class CollisionPopup : MonoBehaviour {
         Scoretext.text = "Score: " + score;
     }
 
-    void OnCollisionEnter()
+    /*void OnCollisionEnter()
     {
         anim.SetBool("Switch", true);
         Debug.Log("zie je mij?");
-    }
+    }*/
 
     void OnTriggerEnter(Collider other)
     {
