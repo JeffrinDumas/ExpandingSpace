@@ -5,31 +5,37 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class CollisionPopup : MonoBehaviour {
+    public Vector3 currentPos;
 
-    public GameObject popup;
     public Text question;
     public Text Scoretext;
-    public GameObject[] options;
     public Text[] optionstexts;
-    public GameObject[] currentobject;
-    public GameObject[] objTaken;
-    public GameObject rightpanel;
-    public GameObject wrongpanel;
-    public GameObject questionpanel;
+
     public QuestionGiver questionGiver;
     public Question q;
-    public int ObjectNum = 0;
+    public GravityAttractor gravy;
+    
     public bool Inventoryfull = false;
     public bool bluekey = false;
     public bool greenkey = false;
     public bool redkey = false;
-    private int randomvragen;
-    public Vector3 currentPos;
-    public GameObject target;
+ 
+    public int ObjectNum = 0;
     public int score = 0;
+    private int randomvragen;
+
+    public GameObject popup;
+    public GameObject rightpanel;
+    public GameObject wrongpanel;
+    public GameObject questionpanel;
+    public GameObject target;
     public GameObject[] blueHouseParts;
     public GameObject[] greenHouseParts;
     public GameObject[] redHouseParts;
+    public GameObject[] currentobject;
+    public GameObject[] objTaken;
+    public GameObject[] options;
+
     public Animator anim;
 
     void Update()
@@ -68,7 +74,9 @@ public class CollisionPopup : MonoBehaviour {
             redkey = true;
         }
 
-        if (other.tag == "Finish")
+      
+
+      if (other.tag == "Finish")
         {
             if (Inventoryfull == true)
             {
@@ -153,5 +161,6 @@ public class CollisionPopup : MonoBehaviour {
         {
             options[i].SetActive(false);
         }
+
     }
 }
