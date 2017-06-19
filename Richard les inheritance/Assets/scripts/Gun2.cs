@@ -8,6 +8,11 @@ public class Gun2 : MonoBehaviour {
     [SerializeField]
     private int currentAmmo;
 
+    public virtual void Start()
+    {
+        currentAmmo = clipSize;
+    }
+
     public virtual void Shoot()
     {
         if(currentAmmo > 0)
@@ -21,7 +26,7 @@ public class Gun2 : MonoBehaviour {
         }
     }
 
-    public void Reload()
+    public virtual void Reload()
     {
         currentAmmo = clipSize;
         Debug.Log(currentAmmo);

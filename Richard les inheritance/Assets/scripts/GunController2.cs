@@ -4,22 +4,50 @@ using UnityEngine;
 
 public class GunController2 : MonoBehaviour
 {
-    [SerializeField]
-    private Gun2 gun2;
-     
+    AudioSource sound;
+    public GameObject gun;
+    private Gun2 pistol;
+    private SniperRifle Snipert;
+    private RocketLauncher Rocket;
+    
+    void Start()
+    {
+        sound = GetComponent<AudioSource>();
+        pistol = gun.GetComponent<Gun2>();
+        Snipert = gun.GetComponent<SniperRifle>();
+        Rocket = gun.GetComponent<RocketLauncher>();
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            gun2.Shoot();
-        } 
-        
+            pistol.Shoot();
+            sound.Play();
+        }
+
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            gun2.Reload();
+            pistol.Reload();
         }
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            pistol.Reload();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            pistol.Reload();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            pistol.Reload();
+        }
+
+
 
     }
 }
