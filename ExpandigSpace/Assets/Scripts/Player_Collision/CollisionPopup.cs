@@ -70,7 +70,7 @@ public class CollisionPopup : MonoBehaviour {
 
       
 
-      if (other.tag == "Finish")
+      if (other.tag == "Ship")
         {
             if (Inventoryfull == true)
             {
@@ -123,17 +123,13 @@ public class CollisionPopup : MonoBehaviour {
         }
         if (other.tag == "DoorBlue" && bluekey == true)
         {
-            Debug.Log("animatie van deur moet 1 keer afspelen");
             for (int i = 0; i < blueHouseParts.Length; i++)
             {
                 Destroy(blueHouseParts[i].gameObject);
             }
-            //other.GetComponent<Animation>().Play();
-            //anim.SetBool("Switch", true);
         }
         if (other.tag == "DoorGreen" && greenkey == true)
         {
-            Debug.Log("animatie van deur moet 1 keer afspelen");
             for (int i = 0; i < greenHouseParts.Length; i++)
             {
                 Destroy(greenHouseParts[i].gameObject);
@@ -141,7 +137,6 @@ public class CollisionPopup : MonoBehaviour {
         }
         if (other.tag == "DoorRed" && redkey == true)
         {
-            Debug.Log("animatie van deur moet 1 keer afspelen");
             for (int i = 0; i < redHouseParts.Length; i++)
             {
                 Destroy(redHouseParts[i].gameObject);
