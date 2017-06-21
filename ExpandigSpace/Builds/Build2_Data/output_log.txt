@@ -15,27 +15,27 @@ Platform assembly: C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\
 Loading C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\Builds\Build2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\Builds\Build2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\Builds\Build2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.042 seconds
+- Completed reload, in  0.072 seconds
 Platform assembly: C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\Builds\Build2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\vanDo\Documents\GitHub\ExpandingSpace\ExpandigSpace\Builds\Build2_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.579851 ms
+UnloadTime: 6.376691 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 4a10 -> priority: 1 
-  Thread -> id: 6230 -> priority: 1 
-  Thread -> id: 7340 -> priority: 1 
-  Thread -> id: 5910 -> priority: 1 
+  Thread -> id: d520 -> priority: 1 
+  Thread -> id: d978 -> priority: 1 
+  Thread -> id: dde4 -> priority: 1 
+  Thread -> id: bc94 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 6.270814 ms
+UnloadTime: 4.328296 ms
 
 Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 279.
-Total: 0.308543 ms (FindLiveObjects: 0.018567 ms CreateObjectMapping: 0.013037 ms MarkObjects: 0.218074 ms  DeleteObjects: 0.058469 ms)
+Total: 0.271012 ms (FindLiveObjects: 0.032000 ms CreateObjectMapping: 0.027259 ms MarkObjects: 0.156839 ms  DeleteObjects: 0.054518 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.647901 ms
+UnloadTime: 0.581925 ms
 The AnimationClip 'Main' used by the Animation component 'blauw huisje' must be marked as Legacy.
  
 (Filename:  Line: 2008)
@@ -46,97 +46,5 @@ Default clip could not be found in attached animations list.
 
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1405.
-Total: 1.361777 ms (FindLiveObjects: 0.077827 ms CreateObjectMapping: 0.026469 ms MarkObjects: 0.322765 ms  DeleteObjects: 0.933925 ms)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.827456 ms
-
-Unloading 138 unused Assets to reduce memory usage. Loaded Objects now: 295.
-Total: 1.765135 ms (FindLiveObjects: 0.028839 ms CreateObjectMapping: 0.036345 ms MarkObjects: 0.195160 ms  DeleteObjects: 1.504395 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.278913 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 380.
-Total: 1.647012 ms (FindLiveObjects: 0.022913 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.216098 ms  DeleteObjects: 1.393777 ms)
-
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.620543 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 301.
-Total: 0.199111 ms (FindLiveObjects: 0.024098 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.141037 ms  DeleteObjects: 0.019753 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.285629 ms
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 290.
-Total: 0.259555 ms (FindLiveObjects: 0.021728 ms CreateObjectMapping: 0.015407 ms MarkObjects: 0.150913 ms  DeleteObjects: 0.071111 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.344493 ms
-The AnimationClip 'Main' used by the Animation component 'blauw huisje' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1409.
-Total: 1.339259 ms (FindLiveObjects: 0.076246 ms CreateObjectMapping: 0.024493 ms MarkObjects: 0.318419 ms  DeleteObjects: 0.919703 ms)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-animatie van deur moet 1 keer afspelen
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.045333 ms
-
-Unloading 138 unused Assets to reduce memory usage. Loaded Objects now: 302.
-Total: 1.975308 ms (FindLiveObjects: 0.026074 ms CreateObjectMapping: 0.019753 ms MarkObjects: 0.190814 ms  DeleteObjects: 1.737876 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.262716 ms
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 383.
-Total: 1.696395 ms (FindLiveObjects: 0.057283 ms CreateObjectMapping: 0.013432 ms MarkObjects: 0.192000 ms  DeleteObjects: 1.433679 ms)
-
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.498172 ms
-The AnimationClip 'Main' used by the Animation component 'blauw huisje' must be marked as Legacy.
- 
-(Filename:  Line: 2008)
-
-Default clip could not be found in attached animations list.
- 
-(Filename:  Line: 395)
-
-
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 1412.
-Total: 0.432987 ms (FindLiveObjects: 0.068740 ms CreateObjectMapping: 0.025679 ms MarkObjects: 0.320790 ms  DeleteObjects: 0.017382 ms)
+Total: 1.411555 ms (FindLiveObjects: 0.092839 ms CreateObjectMapping: 0.024888 ms MarkObjects: 0.348049 ms  DeleteObjects: 0.945382 ms)
 

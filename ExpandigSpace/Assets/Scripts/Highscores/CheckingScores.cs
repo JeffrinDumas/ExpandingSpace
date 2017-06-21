@@ -20,7 +20,22 @@ public class CheckingScores : MonoBehaviour {
 
         for (var i = 0; i < scriptCurrentHighScore.scores.Length; i++)
         {
-            if (scriptMyScore.score > scriptCurrentHighScore.scores[i])
+            if (scriptMyScore.score == scriptCurrentHighScore.scores[i])
+            {
+                if (scriptMyScore.time > scriptCurrentHighScore.times[i])
+                {
+                    for (var j = scriptCurrentHighScore.times.Length - 1; j != i; j--)
+                    {
+                        scriptCurrentHighScore.players[j] = scriptCurrentHighScore.players[j - 1];
+                        scriptCurrentHighScore.scores[j] = scriptCurrentHighScore.scores[j - 1];
+                        scriptCurrentHighScore.times[j] = scriptCurrentHighScore.times[j - 1];
+                    }
+                    scriptCurrentHighScore.players[i] = scriptMyScore.name;
+                    scriptCurrentHighScore.scores[i] = scriptMyScore.score;
+                    scriptCurrentHighScore.times[i] = scriptMyScore.time;
+                    break;
+                }
+            } else if (scriptMyScore.score > scriptCurrentHighScore.scores[i])
             {
                 for (var j = scriptCurrentHighScore.scores.Length - 1; j != i; j--)
                 {
