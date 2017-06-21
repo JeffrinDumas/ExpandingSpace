@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Moveplayer : MonoBehaviour {
-    public float speed;
+    public int speed;
+    private int maxSpeed;
+    private float accelspeed;
 
     private Rigidbody _rigidbody;
     private Vector3 _inputDirection;
@@ -15,7 +17,6 @@ public class Moveplayer : MonoBehaviour {
 
     void Update()
     {
-        //retrieve input
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         _inputDirection = new Vector3(x, 0, z);
@@ -23,7 +24,13 @@ public class Moveplayer : MonoBehaviour {
 
     void FixedUpdate()
     {
-        //move the player using physics
-        _rigidbody.AddForce(_inputDirection * speed);
+        if(speed != maxSpeed)
+        {
+
+            _rigidbody.AddForce(_inputDirection * (speed * accelspeed));
+        }
+
+        
+        
     }
 }
