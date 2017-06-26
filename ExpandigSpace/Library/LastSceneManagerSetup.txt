@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Scene_Caitlyn.unity
+=======
+- path: Assets/Scenes/Startscherm.unity
+>>>>>>> 20563360244397e94bf63606b973cb61e2fa8fc1
   isLoaded: 1
   isActive: 1
