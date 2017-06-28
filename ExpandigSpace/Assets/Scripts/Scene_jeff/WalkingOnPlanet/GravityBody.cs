@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GravityBody : MonoBehaviour {
-    public PlayerController player;
+    public PlayerController1 player;
     public GravityAttractor attractor;
     private Transform myTransform;
     private GameObject target;
