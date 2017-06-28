@@ -1,4 +1,20 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Scene_Jeff New.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Scene_Caitlyn.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Main.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/Scene_Caitlyn.unity
+=======
+- path: Assets/Scenes/Startscherm.unity
+>>>>>>> 20563360244397e94bf63606b973cb61e2fa8fc1
+>>>>>>> 9f308a8e4612a9ab1caf3b16c650d9971544bab9
+>>>>>>> 23d682c2f823e268db3a836a06cb458835f90216
+>>>>>>> 12dfff1dbe25d9c95f227b066319feccd7b07d97
   isLoaded: 1
   isActive: 1

@@ -17,7 +17,8 @@ public class GravityBody : MonoBehaviour {
 
         if (other.tag == "SpeedBoost")
         {
-            player.moveSpeed = 30;
+            player.maxSpeed = 30;
+            player.moveSpeedcurrent *= 1.3f;
         }
     }
 
@@ -30,7 +31,7 @@ public class GravityBody : MonoBehaviour {
 
         if (other.tag == "SpeedBoost")
         {
-            player.moveSpeed = 10;
+            player.maxSpeed = 15;
         }
     }
 
