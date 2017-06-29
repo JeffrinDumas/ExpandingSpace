@@ -35,8 +35,8 @@ public class CollisionPopup : MonoBehaviour {
     public GameObject[] currentobject;
     public GameObject[] objTaken;
     public GameObject[] options;
-
-    public Animator anim;
+    
+    public AudioSource keysound;
 
     void Update()
     {
@@ -54,18 +54,21 @@ public class CollisionPopup : MonoBehaviour {
             score += 5;
             Destroy(other.gameObject);
             bluekey = true;
+            keysound.Play();
         }
         if (other.tag == "KeyGreen")
         {
             score += 5;
             Destroy(other.gameObject);
             greenkey = true;
+            keysound.Play();
         }
         if (other.tag == "KeyRed")
         {
             score += 5;
             Destroy(other.gameObject);
             redkey = true;
+            keysound.Play();
         }
 
       

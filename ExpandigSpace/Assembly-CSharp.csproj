@@ -67,7 +67,7 @@
      <Compile Include="Assets\Scripts\Scene_jeff\PlanetaryRotation\RotationPlanet.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityAttractor.cs" />
      <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\GravityBody.cs" />
-     <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Scene_jeff\WalkingOnPlanet\PlayerController1.cs" />
      <Compile Include="Assets\Scripts\changeName.cs" />
      <Compile Include="Assets\Scripts\colorchange.cs" />
      <Compile Include="Assets\Scripts\playAnimation.cs" />
