@@ -9,20 +9,33 @@ public class PlayerController1 : MonoBehaviour {
  
     public float inputwaarde = 0;
     public float moveSpeed;
-    public float moveSpeedforward = 0.05f;
-    public float moveSpeedbackward = -0.05f;
+    private float moveSpeedforward = 0.05f;
+    private float moveSpeedbackward = -0.05f;
     public int maxSpeed = 15;
+    private int particlePlays = 0;
     private float decreasefactor = 0.96f;
-    public float moveSpeedcurrent;
+    public float moveSpeedcurrent = 0;
     private Vector3 moveDir;
+    [SerializeField]
+    private ParticleSystem drivingparticle;
 
 	void Start () {
         moveSpeed = 1;
     }
 	
 	void Update () {
+        
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
+            if(particlePlays == 0)
+            {
+                if (moveSpeedcurrent != 0)
+                {
+                    drivingparticle.Play();
+                    particlePlays = 1;
+                }
+            }
+           
             if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 inputwaarde = 1;
@@ -49,6 +62,8 @@ public class PlayerController1 : MonoBehaviour {
             if ((!(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))) && moveSpeedcurrent == 0)
             {
                 inputwaarde = 0;
+                drivingparticle.Stop();
+                particlePlays = 0;
             }
             moveSpeedcurrent *= decreasefactor;
             if (moveSpeedcurrent >= -moveSpeed && moveSpeedcurrent <= moveSpeed)

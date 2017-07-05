@@ -35,6 +35,7 @@ public class CollisionPopup : MonoBehaviour {
     public GameObject[] currentobject;
     public GameObject[] objTaken;
     public GameObject[] options;
+    public ParticleSystem[] keyparticles;
     
     public AudioSource keysound;
 
@@ -55,6 +56,7 @@ public class CollisionPopup : MonoBehaviour {
             Destroy(other.gameObject);
             bluekey = true;
             keysound.Play();
+            keyparticles[0].Play();
         }
         if (other.tag == "KeyGreen")
         {
@@ -62,6 +64,7 @@ public class CollisionPopup : MonoBehaviour {
             Destroy(other.gameObject);
             greenkey = true;
             keysound.Play();
+            keyparticles[1].Play();
         }
         if (other.tag == "KeyRed")
         {
@@ -69,6 +72,7 @@ public class CollisionPopup : MonoBehaviour {
             Destroy(other.gameObject);
             redkey = true;
             keysound.Play();
+            keyparticles[2].Play();
         }
 
       
